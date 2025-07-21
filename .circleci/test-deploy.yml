@@ -31,7 +31,8 @@ jobs:
       - mvn-ci/greet:
           to: CCI ORBS
 
-      - mvn-ci/java-version
+      - mvn-ci/java-version:
+          executor: java-executor
 workflows:
   test-deploy:
     jobs:
