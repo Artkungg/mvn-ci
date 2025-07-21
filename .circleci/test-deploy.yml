@@ -23,9 +23,9 @@ jobs:
   # Create jobs to test the commands of your orbs.
   # You may want to add additional validation steps to ensure the commands are working as expected.
   command-test:
-    # docker:
-    #   - image: cimg/base:current
-    executor: java-executor
+    executor:
+      name: mvn-ci/java-executor
+      tag: "21.0.6"
     steps:
       - checkout
       # Run your orb's commands to validate them.
@@ -33,7 +33,7 @@ jobs:
       #     to: CCI ORBS
 
       - mvn-ci/java-version
-          # executor: java-executor
+
 workflows:
   test-deploy:
     jobs:
