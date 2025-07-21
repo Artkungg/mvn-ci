@@ -1,0 +1,6 @@
+description: call commands/java-version for show java version
+
+executor: java-executor
+
+steps:
+  - java-version
