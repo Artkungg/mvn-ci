@@ -31,7 +31,7 @@ jobs:
       - mvn-ci/greet:
           to: CCI ORBS
 
-      - mvn-ci/java-servion:
+      - mvn-ci/java-version:
           tag: 21.0.6
 workflows:
   test-deploy:
