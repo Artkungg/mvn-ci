@@ -25,6 +25,7 @@ jobs:
   command-test:
     # docker:
     #   - image: cimg/base:current
+    executor: java-executor
     steps:
       - checkout
       # Run your orb's commands to validate them.
