@@ -4,4 +4,4 @@
 TO=$(circleci env subst "${PARAM_TO}")
 # If for any reason the TO variable is not set, default to "World"
 echo "Hello ${TO:-World}!"
-echo node --version
+node --version
