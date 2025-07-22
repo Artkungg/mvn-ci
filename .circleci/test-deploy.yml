@@ -28,8 +28,8 @@ jobs:
       tag: "21.0.6"
     steps:
       - checkout
-      # - mvn-ci/greet:
-      #     to: CCI ORBS
+      - mvn-ci/greet:
+          to: CCI ORBS
       - mvn-ci/java-version
 
 workflows:
