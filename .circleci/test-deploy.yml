@@ -23,20 +23,17 @@ jobs:
   # Create jobs to test the commands of your orbs.
   # You may want to add additional validation steps to ensure the commands are working as expected.
   command-test:
-    executor:
-      name: mvn-ci/java-executor
-      tag: "21.0.6"
     steps:
       - checkout
       - mvn-ci/greet:
           to: CCI ORBS
-      - mvn-ci/java-version
 
 workflows:
   test-deploy:
     jobs:
       # Make sure to include "filters: *filters" in every test job you want to run as part of your deployment.
       # Test your orb's commands in a custom job and test your orb's jobs directly as a part of this workflow.
+      - mvn-ci/hello:
       - command-test:
           filters: *filters
       # The orb must be re-packed for publishing, and saved to the workspace.
