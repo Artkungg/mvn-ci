@@ -39,7 +39,6 @@ workflows:
           pub_type: production
           # Ensure this job requires all test jobs and the pack job.
           requires:
-            - orb-tools/pack
-            - command-test
+            - orb-tools/continue
           context: <publishing-context>
           filters: *release-filters
