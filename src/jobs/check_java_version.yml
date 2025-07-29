@@ -5,4 +5,4 @@ executor:
   tag: "23.0.2"
 
 steps:
-  - java-version
+  - java_version
