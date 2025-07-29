@@ -1,7 +1,7 @@
 description: call commands/java-version for show java version
 
 executor:
-  name: java-executor
+  name: java_executor
   tag: "23.0.2"
 
 steps:
