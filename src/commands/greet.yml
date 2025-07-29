@@ -5,7 +5,7 @@ description: >
 parameters:
   to:
     type: string
-    default: "World"
+    default: "cci orbs"
     description: "Hello to whom?"
 steps:
   - run:

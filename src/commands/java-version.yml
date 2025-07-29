@@ -1,0 +1,5 @@
+description: print java version
+steps:
+  - run:
+      name: show java version
+      command: java --version

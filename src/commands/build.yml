@@ -1,0 +1,6 @@
+description: Download used dependency.
+
+steps:
+  - run:
+      name: mvn compile
+      command: <<include(scripts/load-dependencies.sh)>>
