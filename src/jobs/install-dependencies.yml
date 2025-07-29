@@ -1,0 +1,9 @@
+description: run mvn build command
+
+executor:
+  name: java-executor
+  tag: "23.0.2"
+
+steps:
+  - checkout
+  - build
